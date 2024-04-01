@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    </head>
+    <body>
+        <h1>Form Pendaftaran</h1>
+        <form action="/submit-your-endpoint" method="post">
+            <label for="nama">Nama &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</label>
+            <input type="text" id="nama" name="nama"><br>
+
+            <label for="password">Password  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</label>
+            <input type="password" id="password" name="password"><br>
+            
+            <label for="tanggal_lahir">Tanggal Lahir &nbsp;  :</label>
+            <table>
+            <tr>
+                <td><input type="text" id="tanggal_lahir_hari" name="tanggal_lahir_hari" pattern="\d{2}" placeholder="HH" style="width: 30px;" required></td>
+                <td>/</td>
+                <td><input type="text" id="tanggal_lahir_bulan" name="tanggal_lahir_bulan" pattern="\d{2}" placeholder="BB" style="width: 30px;" required></td>
+                <td>/</td>
+                <td><input type="text" id="tanggal_lahir_tahun" name="tanggal_lahir_tahun" pattern="\d{4}" placeholder="TTTT" style="width: 30px;" required></td>
+            </tr>
+            </table>
+
+            <label for="jenis_kelamin">Jenis Kelamin &nbsp; :</label>
+            <input type="radio" id="laki_laki" name="jenis_kelamin" value="laki_laki">
+            <label for="laki_laki">Laki-Laki</label> 
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+            <label for="perempuan">Perempuan</label><br>
+
+            <label for="jurusan">Jurusan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</label>
+            <select id="jurusan" name="jurusan">
+                <option value="imt">IMT</option>
+            </select>   <br>
+            <label for="hoby">Hoby &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</label>
+            <input type="checkbox" id="gaming" name="hoby" value="gaming">
+            <label for="gaming">Gaming</label>
+            <input type="checkbox" id="traveling" name="hoby" value="traveling">
+            <label for="traveling">Traveling</label>
+            <input type="checkbox" id="rebahan" name="hoby" value="rebahan">
+            <label for="rebahan">Rebahan</label> <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input type="checkbox" id="dengar_musik" name="hoby" value="dengar_musik">
+            <label for="dengar_musik">Dengar musik</label>
+            <input type="checkbox" id="adventure" name="hoby" value="adventure">
+            <label for="adventure">Adventure</label>
+            <input type="checkbox" id="lainnya" name="hoby" value="lainnya">
+            <label for="lainnya">Lainnya</label><br><br>
+
+            <label for="alamat">Alamat &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</label>
+            <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br>
+
+            <label for="semester">Semester &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    :</label>
+            <select id="semester" name="semester">
+                <option value="satu">satu</option>
+            </select><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </body>
+    </html>
